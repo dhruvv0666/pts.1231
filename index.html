@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logox.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="controller.html">Game Controllers</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="">Headsets</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+            <img src=" images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>XBOX SERIES X<br></h2>
+                <h3>Only for True Gamers</h3>
+                <h4>$750</h4>
+                <button type="button">Buy Now <img src="images/WhatsApp Image 2023-01-29 at 7.38.43 PM.jpeg"></button>
+            </div>
+            <div class="col-2">
+                <img src="images/xbox.png" class="console">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/free-arrow-down-icon-3101-thumb.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-link">
+            <img src="images/Facebook_Logo_(2019).png.webp">
+            <img src="images/twt.jpg">
+            <img src="images/inss.jpg">
+        </div>
+
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if( menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+
+    </script>
+
+</body>
+</html>
